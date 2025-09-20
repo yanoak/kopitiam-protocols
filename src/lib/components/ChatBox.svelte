@@ -91,7 +91,7 @@
 	});
 </script>
 
-<div class="chat-box {className} h-[300px]">
+<div class="chat-box {className}">
 	<div class="chat-header">
 		<div class="header-content">
 			<div class="header-text">
@@ -363,6 +363,10 @@
 
 	/* Responsive adjustments */
 	@media (max-width: 768px) {
+		.chat-box {
+			max-height: 50vh;
+		}
+		
 		.chat-header {
 			padding: 0.75rem 1rem;
 		}

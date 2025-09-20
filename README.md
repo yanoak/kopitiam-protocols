@@ -1,38 +1,82 @@
-# sv
+# Kopitiam Protocols
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+An interactive story experience built with SvelteKit, set in a traditional Southeast Asian kopitiam (coffee shop).
 
-## Creating a project
+## About
 
-If you're seeing this, you've probably already done this step. Congrats!
+Immerse yourself in the bustling world of Ah Beng Kopitiam, where you'll discover the intricate protocols that keep this traditional coffee shop running smoothly. Make choices that shape your story as you explore the rich culture and time-honored traditions of kopitiam life.
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Features
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **Interactive Branching Narrative**: Multiple story paths based on your choices
+- **Rich Cultural Context**: Authentic kopitiam terminology and traditions
+- **Navigation Controls**: Go back to previous choices or restart the story
+- **Responsive Design**: Beautiful styling with Tailwind CSS
+- **Modern Web Technology**: Built with SvelteKit for optimal performance
 
-## Developing
+## Story Paths
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Explore different aspects of kopitiam culture:
+- Learn traditional kopi (coffee) brewing protocols
+- Master the efficiency systems of table service
+- Discover the history and heritage of the kopitiam
+- Experience the choreographed dance of daily operations
 
-```sh
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Visit `http://localhost:5173` to experience the interactive story.
 
-To create a production version of your app:
+### Building
 
-```sh
+Create a production build:
+```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview the production build:
+```bash
+npm run preview
+```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Technology Stack
+
+- **SvelteKit**: Full-stack web framework
+- **Tailwind CSS**: Utility-first CSS framework with typography plugin
+- **Prettier**: Code formatting
+- **Vite**: Build tool and development server
+
+## Story Structure
+
+The interactive story is powered by a flexible data structure that supports:
+- Branching narratives with multiple choice points
+- Story state management and navigation history
+- Dynamic content rendering based on user choices
+- Seamless transitions between story nodes
+
+## Contributing
+
+Feel free to contribute additional story branches, improve the styling, or enhance the interactive features. The story data is modular and easily extensible.
+
+## Cultural Notes
+
+This story celebrates the rich heritage of Southeast Asian kopitiam culture, featuring authentic terminology and traditional practices. The "protocols" theme reflects the precise, time-tested methods that make these establishments special community gathering places.

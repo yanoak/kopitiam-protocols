@@ -31,6 +31,14 @@
 	// Check if we can show more lines
 	const hasMoreLines = $derived(currentDialogIndex < dialogLines.length);
 
+	// Get the current speaker (last visible dialog line)
+	const currentSpeaker = $derived(() => {
+		if (visibleDialogLines.length > 0) {
+			return visibleDialogLines[visibleDialogLines.length - 1]['character-code'];
+		}
+		return null;
+	});
+
 	// Function to scroll to bottom of chat
 	function scrollToBottom() {
 		if (chatMessagesElement) {
@@ -64,7 +72,7 @@
 		}
 		
 		if (onNext) {
-			onNext(currentDialogIndex, hasMoreLines);
+			onNext(currentDialogIndex, hasMoreLines, currentSpeaker);
 		}
 	}
 
@@ -87,7 +95,7 @@
 	<div class="chat-header">
 		<div class="header-content">
 			<div class="header-text">
-				<h3 class="chat-title">Kopitiam Conversations</h3>
+				<h3 class="chat-title">Protocol Watching at the Kopitiam</h3>
 				<div class="chat-subtitle">Listen to the protocols unfold...</div>
 			</div>
 			<button 

@@ -2,6 +2,14 @@
 	import ChatBox from '$lib/components/ChatBox.svelte';
 	import ImageHolder from '$lib/components/ImageHolder.svelte';
 	import dialogData from '../dialog.json';
+
+	// State to track current speaker
+	let currentSpeaker = $state(null);
+
+	// Handle dialog progression
+	function handleDialogNext(currentIndex, hasMore, speaker) {
+		currentSpeaker = speaker();
+	}
 </script>
 
 <svelte:head>
@@ -16,12 +24,12 @@
 	<div class="two-panel-layout">
 		<!-- Left Panel - Chat Box -->
 		<div class="left-panel">
-			<ChatBox dialogLines={dialogData} />
+			<ChatBox dialogLines={dialogData} onNext={handleDialogNext} />
 		</div>
 		
 		<!-- Right Panel - Image Holder -->
 		<div class="right-panel">
-			<ImageHolder src="/img/scene.png" alt="Kopitiam scene" />
+			<ImageHolder currentSpeaker={currentSpeaker} alt="Kopitiam scene" />
 		</div>
 	</div>
 </div>

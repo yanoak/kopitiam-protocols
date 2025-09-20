@@ -1,26 +1,45 @@
 <script>
-	let { src = '', alt = 'Scene image', className = '' } = $props();
+	let { src = '', alt = 'Scene image', className = '', currentSpeaker = null } = $props();
+
+	$effect(() => {
+		console.log('currentSpeaker', currentSpeaker);
+		console.log('overlayImage', overlayImage);
+	});
+
+	// Character image mapping
+	const characterImages = {
+		'elder-daughter': '/img/elder-daughter.png',
+		'younger-daughter': '/img/younger-daughter.png',
+		'grandma': '/img/grandma.png',
+		'waiter': '/img/waiter.png',
+		'son-in-law': '/img/son-in-law.png'
+	};
+
+	// Determine which images to show (reactive)
+	const backgroundImage = $derived(currentSpeaker ? '/img/scene_bw.png' : '/img/scene.png');
+	const overlayImage = $derived(currentSpeaker ? characterImages[currentSpeaker] : null);
 </script>
 
 <div class="image-holder {className}">
 	{#if src}
 		<img {src} {alt} class="scene-image" />
 	{:else}
-		<div class="placeholder">
-			<div class="placeholder-icon">
-				<svg
-					width="48"
-					height="48"
-					viewBox="0 0 24 24"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2" />
-					<circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2" />
-					<polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2" />
-				</svg>
-			</div>
-			<p class="placeholder-text">Scene Image</p>
+		<div class="image-layers">
+			<!-- Background scene (color or B&W) -->
+			<img 
+				src={backgroundImage} 
+				alt="Kopitiam scene" 
+				class="background-image"
+			/>
+			
+			<!-- Character overlay (when speaking) -->
+			{#if overlayImage}
+				<img 
+					src={overlayImage} 
+					alt="Current speaker" 
+					class="character-overlay"
+				/>
+			{/if}
 		</div>
 	{/if}
 </div>
@@ -45,6 +64,47 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
+	}
+
+	.image-layers {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.background-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.character-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		opacity: 0;
+		animation: fadeInCharacter 0.6s ease-in-out forwards;
+		pointer-events: none;
+	}
+
+	@keyframes fadeInCharacter {
+		0% {
+			opacity: 0;
+			transform: scale(1.05);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
 	}
 
 	.placeholder {

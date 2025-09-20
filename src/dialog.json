@@ -1,0 +1,146 @@
+[
+  {
+    "character": "Elder Daughter",
+    "character-code": "elder-daughter",
+    "text": "You notice people order more teh tarik in the mornings? I'm trying to figure out how to optimize breakfast delivery.",
+    "protocol": "breakfast",
+    "tension": "ritual vs scalability",
+    "intonation": "(to Waiter)"
+  },
+  {
+    "character": "Waiter",
+    "character-code": "waiter",
+    "text": "Every table is different… some like kopi, some like teh. Depends on mood, on who they sit with.",
+    "protocol": "breakfast",
+    "tension": "ritual vs scalability",
+    "intonation": "(hesitant)"
+  },
+  {
+    "character": "Elder Daughter",
+    "character-code": "elder-daughter",
+    "text": "But if I know the pattern, I can scale it. That's the point.",
+    "protocol": "breakfast",
+    "tension": "ritual vs scalability",
+    "intonation": ""
+  },
+  {
+    "character": "Waiter",
+    "character-code": "waiter",
+    "text": "For me, kopi is not numbers. It's how you stir, how long you pull. People taste that.",
+    "protocol": "breakfast",
+    "tension": "ritual vs scalability",
+    "intonation": "(smiling nervously)"
+  },
+  {
+    "character": "Younger Daughter",
+    "character-code": "younger-daughter",
+    "text": "Jie, your company feels like my dance crew — chaos, everyone chasing clout.",
+    "protocol": "startups",
+    "tension": "sustainability vs spectacle",
+    "intonation": "(rolling eyes)"
+  },
+  {
+    "character": "Elder Daughter",
+    "character-code": "elder-daughter",
+    "text": "Chaos? It's building the future. Investors, government grants — it's real, not just viral.",
+    "protocol": "startups",
+    "tension": "sustainability vs spectacle",
+    "intonation": ""
+  },
+  {
+    "character": "Younger Daughter",
+    "character-code": "younger-daughter",
+    "text": "Real? Half your interns are burnt out. At least in dance, if we go viral once, we celebrate.",
+    "protocol": "startups",
+    "tension": "sustainability vs spectacle",
+    "intonation": ""
+  },
+  {
+    "character": "Elder Daughter",
+    "character-code": "elder-daughter",
+    "text": "If I don't scale, we don't survive. Virality is a sugar rush. I'm playing the long game.",
+    "protocol": "startups",
+    "tension": "sustainability vs spectacle",
+    "intonation": "(sighs)"
+  },
+  {
+    "character": "Grandma",
+    "character-code": "grandma",
+    "text": "When I came here, also not easy. I was small, had to learn everything new. But after independence, they gave us papers. We belonged.",
+    "protocol": "migration",
+    "tension": "founding migration vs precarity",
+    "intonation": "(fondly, in dialect)"
+  },
+  {
+    "character": "Waiter",
+    "character-code": "waiter",
+    "text": "For me… no papers. I work, send money home. But I cannot belong. Every day I worry.",
+    "protocol": "migration",
+    "tension": "founding migration vs precarity",
+    "intonation": "(quietly)"
+  },
+  {
+    "character": "Grandma",
+    "character-code": "grandma",
+    "text": "The country forgets it was built by people like us.",
+    "protocol": "migration",
+    "tension": "founding migration vs precarity",
+    "intonation": "(gently patting his hand)"
+  },
+  {
+    "character": "Son-in-law",
+    "character-code": "son-in-law",
+    "text": "Ma, I try every year for citizenship. Always more forms, more tests. Feels like I'm proving myself again and again.",
+    "protocol": "citizenship",
+    "tension": "belonging vs bureaucracy",
+    "intonation": ""
+  },
+  {
+    "character": "Grandma",
+    "character-code": "grandma",
+    "text": "In my time, they needed people. They welcomed us. We sang the anthem once, and we were citizens.",
+    "protocol": "citizenship",
+    "tension": "belonging vs bureaucracy",
+    "intonation": "(nodding slowly)"
+  },
+  {
+    "character": "Son-in-law",
+    "character-code": "son-in-law",
+    "text": "Now, I live here, I married here, but one mistake — visa late, wrong stamp — and I lose everything.",
+    "protocol": "citizenship",
+    "tension": "belonging vs bureaucracy",
+    "intonation": ""
+  },
+  {
+    "character": "Son-in-law",
+    "character-code": "son-in-law",
+    "text": "Back home, we rapped against the police. Small shows, no lights, just anger and rhythm. Hip-hop was survival.",
+    "protocol": "hip hop",
+    "tension": "resistance vs commodification",
+    "intonation": ""
+  },
+  {
+    "character": "Younger Daughter",
+    "character-code": "younger-daughter",
+    "text": "Now it's about TikTok dances, sponsorships, Nike collabs. It's how you go viral, not how you resist.",
+    "protocol": "hip hop",
+    "tension": "resistance vs commodification",
+    "intonation": "(laughs)"
+  },
+  {
+    "character": "Son-in-law",
+    "character-code": "son-in-law",
+    "text": "Viral is not freedom. It's just another cage.",
+    "protocol": "hip hop",
+    "tension": "resistance vs commodification",
+    "intonation": "(shakes head)"
+  },
+  {
+    "character": "Younger Daughter",
+    "character-code": "younger-daughter",
+    "text": "Maybe. But it's the cage we know how to play in.",
+    "protocol": "hip hop",
+    "tension": "resistance vs commodification",
+    "intonation": ""
+  }
+]
